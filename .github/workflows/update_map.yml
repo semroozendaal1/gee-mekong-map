@@ -19,13 +19,16 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install earthengine-api geemap folium branca jinja2
+          pip install earthengine-api geemap folium branca jinja2 jupyter
 
       - name: Save Service Account Key
         run: echo "${{ secrets.GEE_KEY }}" > key.json
 
+      - name: Convert notebook to Python
+        run: jupyter nbconvert --to script export_try_1-10.ipynb
+
       - name: Run update script
-        run: python export_try_1-10.ipynb
+        run: python export_try_1-10.py
         env:
           GOOGLE_APPLICATION_CREDENTIALS: key.json
           GEE_SERVICE_ACCOUNT: ${{ secrets.GEE_SERVICE_ACCOUNT }}
