@@ -25,7 +25,7 @@ jobs:
         run: echo "${{ secrets.GEE_KEY }}" > key.json
 
       - name: Run update script
-        run: python your_script.py
+        run: python export_try_1-10.ipynb
         env:
           GOOGLE_APPLICATION_CREDENTIALS: key.json
           GEE_SERVICE_ACCOUNT: ${{ secrets.GEE_SERVICE_ACCOUNT }}
