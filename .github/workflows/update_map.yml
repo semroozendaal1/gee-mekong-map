@@ -32,7 +32,7 @@ jobs:
         run: jupyter nbconvert --to script tryout_goal_LOSS_add_breakwater2.ipynb
 
       - name: Run update script
-        run: python export_try_1-10.py
+        run: python tryout_goal_LOSS_add_breakwater2.ipynb
         env:
           GOOGLE_APPLICATION_CREDENTIALS: key.json
           GEE_SERVICE_ACCOUNT: ${{ secrets.GEE_SERVICE_ACCOUNT }}
@@ -41,6 +41,6 @@ jobs:
         run: |
           git config user.name "Map Bot"
           git config user.email "bot@example.com"
-          git add tryout_goal_LOSS_exp.html tile_urls.json
+          git add tryout_goal_LOSS4.html tile_urls.json
           git commit -m "Automated map update" || echo "No changes to commit"
           git push
