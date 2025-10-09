@@ -20,9 +20,24 @@ jobs:
         with:
           python-version: "3.10"
 
+      # - name: Install dependencies
+      #   run: |
+      #     pip install earthengine-api geemap folium branca jinja2 jupyter
+
       - name: Install dependencies
         run: |
-          pip install earthengine-api geemap folium branca jinja2 jupyter
+          sudo apt-get update
+          sudo apt-get install -y libgeos-dev proj-bin proj-data proj-base libproj-dev gdal-bin libgdal-dev
+          pip install \
+            earthengine-api \
+            geemap \
+            folium \
+            branca \
+            jinja2 \
+            jupyter \
+            geopandas \
+            cartopy
+
 
       - name: Save Service Account Key
         run: |
