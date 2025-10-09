@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgeos-dev proj-bin proj-data proj-base libproj-dev gdal-bin libgdal-dev
+          sudo apt-get install -y libgeos-dev proj-bin proj-data libproj-dev gdal-bin libgdal-dev
           pip install \
             earthengine-api \
             geemap \
