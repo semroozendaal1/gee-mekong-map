@@ -29,7 +29,7 @@ jobs:
             echo '${{ secrets.GEE_KEY }}' > key.json
 
       - name: Convert notebook to Python
-        run: jupyter nbconvert --to script export_try_1-10.ipynb
+        run: jupyter nbconvert --to script tryout_goal_LOSS_add_breakwater2.ipynb
 
       - name: Run update script
         run: python export_try_1-10.py
