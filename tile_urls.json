@@ -1,11 +1,11 @@
 {
-  "Sentinel-2 (2024)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/dadf96d996d587b3d36f222a464f5181-f8fffb02cbeac89eb7cb41a077e05d36/tiles/{z}/{x}/{y}",
-  "Mangrove loss (1984-1992)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/0473bd444c3a6f055f0ae345892ac1fe-6e558526de80e6268ebf0c39d3b9ccd0/tiles/{z}/{x}/{y}",
-  "Mangrove loss (1992-1997)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/f82a62adb141c1477c3528dcfa67c4aa-90d96f57b71cee0e25d1f257535ccc3c/tiles/{z}/{x}/{y}",
-  "Mangrove loss (1997-2001)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/bfca90f71cb2707ad3ad4dbe3c82087e-473326b587e62c35f5657cb23dc4bc61/tiles/{z}/{x}/{y}",
-  "Mangrove loss (2001-2005)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/0b595b4887257b26b94595550721e501-a13b82b3e23ee52b8d878eb303d40450/tiles/{z}/{x}/{y}",
-  "Mangrove loss (2005-2010)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/7c00d0d044d84faa03b4c4a66a63d01e-a2baa3bd2c1b0a4eb186d13897da3fd1/tiles/{z}/{x}/{y}",
-  "Mangrove loss (2010-2015)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/fc9d6a77fee1da5ed8fea179b0b6fb83-e9a1d175f5931608d0f8b32f298a1518/tiles/{z}/{x}/{y}",
-  "Mangrove loss (2015-2020)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/9e59944ebc1dd672a47e377e276b9f5f-1b5ccde70f4dbf40c75dd0e2f867e62e/tiles/{z}/{x}/{y}",
-  "Mangrove loss (2020-2025)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/9c5b510fbde53337b9fdc8e1e43517b2-347d662869bc2e02f8a718352bbb03df/tiles/{z}/{x}/{y}"
+  "Sentinel-2 (2024)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/f4b5126e7a42f94b8e26e1dc7d3bf470-23c07db6b2c367a3d6c2582312b2d294/tiles/{z}/{x}/{y}",
+  "Mangrove loss (1984-1992)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/0473bd444c3a6f055f0ae345892ac1fe-4c0d1cedcbff8e30e9a84b41db09a77d/tiles/{z}/{x}/{y}",
+  "Mangrove loss (1992-1997)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/f82a62adb141c1477c3528dcfa67c4aa-d057547785ea193ab7f4497ed2782f92/tiles/{z}/{x}/{y}",
+  "Mangrove loss (1997-2001)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/bfca90f71cb2707ad3ad4dbe3c82087e-acd2c231f9a081cbe2f7a87fd33b33d8/tiles/{z}/{x}/{y}",
+  "Mangrove loss (2001-2005)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/0b595b4887257b26b94595550721e501-734c04fcd4d7cfbd6453656b9d7fae95/tiles/{z}/{x}/{y}",
+  "Mangrove loss (2005-2010)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/7c00d0d044d84faa03b4c4a66a63d01e-aab600707d445d19a341b2b1ef32dcda/tiles/{z}/{x}/{y}",
+  "Mangrove loss (2010-2015)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/487023619adc0cb3fc3ed4faa3f74576-238a00b137e82e1165b8d855fc981b5a/tiles/{z}/{x}/{y}",
+  "Mangrove loss (2015-2020)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/bc7ecf13a4d637db0c8b55e0f70ae51b-990406aa487be72808c0b75c4dcf3a66/tiles/{z}/{x}/{y}",
+  "Mangrove loss (2020-2025)": "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/c20d43a64cdb14e2a198be736a1ff707-95255b08e4ef6b5d570ce9b1d4446169/tiles/{z}/{x}/{y}"
 }
