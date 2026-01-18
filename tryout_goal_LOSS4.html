@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_0fa2eea97a80ff6f6b6efc690c0948a6 {
+                #map_078f21bad3403027b534cd25c29ba342 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -79,7 +79,7 @@
         </div>
     
     
-            <div class="folium-map" id="map_0fa2eea97a80ff6f6b6efc690c0948a6" ></div>
+            <div class="folium-map" id="map_078f21bad3403027b534cd25c29ba342" ></div>
         
     
             
@@ -96,8 +96,8 @@
 <script>
     
     
-            var map_0fa2eea97a80ff6f6b6efc690c0948a6 = L.map(
-                "map_0fa2eea97a80ff6f6b6efc690c0948a6",
+            var map_078f21bad3403027b534cd25c29ba342 = L.map(
+                "map_078f21bad3403027b534cd25c29ba342",
                 {
                     center: [9.2, 105.75],
                     crs: L.CRS.EPSG3857,
@@ -125,7 +125,7 @@
 
         
     
-            var tile_layer_188f3965931f7a1ccf4d757c402674d4 = L.tileLayer(
+            var tile_layer_ae2a798f058338b64185e5077d30eded = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -142,7 +142,7 @@
             );
         
     
-            tile_layer_188f3965931f7a1ccf4d757c402674d4.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_ae2a798f058338b64185e5077d30eded.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
             L.control.fullscreen(
@@ -152,7 +152,7 @@
   "titleCancel": "Exit Full Screen",
   "forceSeparateButton": false,
 }
-            ).addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            ).addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
             var options = {
@@ -161,16 +161,16 @@
               edit: {},
             }
                 // FeatureGroup is to store editable layers.
-                var drawnItems_draw_control_138f46371b65626198f1a6db36f0c6b3 =
+                var drawnItems_draw_control_2a426a1f49cd56fe9d363bff621e3882 =
                     new L.featureGroup().addTo(
-                        map_0fa2eea97a80ff6f6b6efc690c0948a6
+                        map_078f21bad3403027b534cd25c29ba342
                     );
 
-            options.edit.featureGroup = drawnItems_draw_control_138f46371b65626198f1a6db36f0c6b3;
-            var draw_control_138f46371b65626198f1a6db36f0c6b3 = new L.Control.Draw(
+            options.edit.featureGroup = drawnItems_draw_control_2a426a1f49cd56fe9d363bff621e3882;
+            var draw_control_2a426a1f49cd56fe9d363bff621e3882 = new L.Control.Draw(
                 options
-            ).addTo( map_0fa2eea97a80ff6f6b6efc690c0948a6 );
-            map_0fa2eea97a80ff6f6b6efc690c0948a6.on(L.Draw.Event.CREATED, function(e) {
+            ).addTo( map_078f21bad3403027b534cd25c29ba342 );
+            map_078f21bad3403027b534cd25c29ba342.on(L.Draw.Event.CREATED, function(e) {
                 var layer = e.layer,
                     type = e.layerType;
                 var coords = JSON.stringify(layer.toGeoJSON());
@@ -178,17 +178,17 @@
                     alert(coords);
                     console.log(coords);
                 });
-                drawnItems_draw_control_138f46371b65626198f1a6db36f0c6b3.addLayer(layer);
+                drawnItems_draw_control_2a426a1f49cd56fe9d363bff621e3882.addLayer(layer);
             });
-            map_0fa2eea97a80ff6f6b6efc690c0948a6.on('draw:created', function(e) {
-                drawnItems_draw_control_138f46371b65626198f1a6db36f0c6b3.addLayer(e.layer);
+            map_078f21bad3403027b534cd25c29ba342.on('draw:created', function(e) {
+                drawnItems_draw_control_2a426a1f49cd56fe9d363bff621e3882.addLayer(e.layer);
             });
 
             
         
     
 
-            var geocoderOpts_geocoder_d7a9de762eb680fbfa8250ad3c2891b7 = {
+            var geocoderOpts_geocoder_389857c145b807ca287a586f3078589c = {
   "collapsed": true,
   "position": "topleft",
   "defaultMarkGeocode": true,
@@ -199,30 +199,30 @@
 };
 
             // note: geocoder name should start with lowercase
-            var geocoderName_geocoder_d7a9de762eb680fbfa8250ad3c2891b7 = geocoderOpts_geocoder_d7a9de762eb680fbfa8250ad3c2891b7["provider"];
+            var geocoderName_geocoder_389857c145b807ca287a586f3078589c = geocoderOpts_geocoder_389857c145b807ca287a586f3078589c["provider"];
 
-            var customGeocoder_geocoder_d7a9de762eb680fbfa8250ad3c2891b7 = L.Control.Geocoder[ geocoderName_geocoder_d7a9de762eb680fbfa8250ad3c2891b7 ](
-                geocoderOpts_geocoder_d7a9de762eb680fbfa8250ad3c2891b7['providerOptions']
+            var customGeocoder_geocoder_389857c145b807ca287a586f3078589c = L.Control.Geocoder[ geocoderName_geocoder_389857c145b807ca287a586f3078589c ](
+                geocoderOpts_geocoder_389857c145b807ca287a586f3078589c['providerOptions']
             );
-            geocoderOpts_geocoder_d7a9de762eb680fbfa8250ad3c2891b7["geocoder"] = customGeocoder_geocoder_d7a9de762eb680fbfa8250ad3c2891b7;
+            geocoderOpts_geocoder_389857c145b807ca287a586f3078589c["geocoder"] = customGeocoder_geocoder_389857c145b807ca287a586f3078589c;
 
             L.Control.geocoder(
-                geocoderOpts_geocoder_d7a9de762eb680fbfa8250ad3c2891b7
+                geocoderOpts_geocoder_389857c145b807ca287a586f3078589c
             ).on('markgeocode', function(e) {
-                var zoom = geocoderOpts_geocoder_d7a9de762eb680fbfa8250ad3c2891b7['zoom'] || map_0fa2eea97a80ff6f6b6efc690c0948a6.getZoom();
-                map_0fa2eea97a80ff6f6b6efc690c0948a6.setView(e.geocode.center, zoom);
-            }).addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+                var zoom = geocoderOpts_geocoder_389857c145b807ca287a586f3078589c['zoom'] || map_078f21bad3403027b534cd25c29ba342.getZoom();
+                map_078f21bad3403027b534cd25c29ba342.setView(e.geocode.center, zoom);
+            }).addTo(map_078f21bad3403027b534cd25c29ba342);
 
         
     
-            map_0fa2eea97a80ff6f6b6efc690c0948a6.fitBounds(
+            map_078f21bad3403027b534cd25c29ba342.fitBounds(
                 [[9.2, 105.75], [9.2, 105.75]],
                 {"maxZoom": 11}
             );
         
     
-            var tile_layer_5c0c8a0d95d1509ebc27680509ee56bd = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/1b4bc668ca504884b3ccb6186cb9fe7a-33f937a1df1c1424145df354bf646955/tiles/{z}/{x}/{y}",
+            var tile_layer_94418812b7dfdd464fd155f342d26e6f = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/ffcaaacb97728116d943ffb89ca5fa56-6f84450883b7e9432d55c99f4b0a38d8/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -238,11 +238,11 @@
             );
         
     
-            tile_layer_5c0c8a0d95d1509ebc27680509ee56bd.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_94418812b7dfdd464fd155f342d26e6f.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_65b72ba4d98fde7685b92064bdea1259 = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/c50eeae722788111c6cab842c889b45f-3e44db7a5b1a2628f40c7711ea227057/tiles/{z}/{x}/{y}",
+            var tile_layer_3fed4e4156acd2daa5dcd1bbede87de1 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/c50eeae722788111c6cab842c889b45f-5e35303a81f3d7482c2a294c8d94a08d/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -258,11 +258,11 @@
             );
         
     
-            tile_layer_65b72ba4d98fde7685b92064bdea1259.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_3fed4e4156acd2daa5dcd1bbede87de1.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_0120b4ec42ade6874cd230f299179176 = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/4a5ecbf996a3468322778c8aa5c970ba-6e39de9ec549fa6ed17bdccb5efa9819/tiles/{z}/{x}/{y}",
+            var tile_layer_0f686d17d8b762cd6e81e42adc790679 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/4a5ecbf996a3468322778c8aa5c970ba-7620a46045b8276209d5e5fc99c09302/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -278,11 +278,11 @@
             );
         
     
-            tile_layer_0120b4ec42ade6874cd230f299179176.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_0f686d17d8b762cd6e81e42adc790679.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_de91f32c3b80fb909e69c34215102633 = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/af52a99f7c07afade9df9d7c03266889-26a12859925d8db23f2443497bcfa05e/tiles/{z}/{x}/{y}",
+            var tile_layer_1b2f02fbeee31c8076c71c8cf177f922 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/af52a99f7c07afade9df9d7c03266889-ce1bf2e4bd98a1291116c64acfbb4c60/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -298,11 +298,11 @@
             );
         
     
-            tile_layer_de91f32c3b80fb909e69c34215102633.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_1b2f02fbeee31c8076c71c8cf177f922.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_7b8b3ba8d29ab5cf285ce31e12d8e45a = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/041d3306a2307347ef6bd375e41b08a5-e6bc3341da9056e08a9a21c45c7c293c/tiles/{z}/{x}/{y}",
+            var tile_layer_1f54ee9cb1674f89f24414a72cf16760 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/041d3306a2307347ef6bd375e41b08a5-fdefee4285e6328fca65c78c707fe31d/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -318,11 +318,11 @@
             );
         
     
-            tile_layer_7b8b3ba8d29ab5cf285ce31e12d8e45a.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_1f54ee9cb1674f89f24414a72cf16760.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_9da5a5ed00d7012e65e0fd01533f31cd = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/a10c48d6aa273330d81dda10e2f950aa-23ea2bef0bece80f2e46c709cbd0d37f/tiles/{z}/{x}/{y}",
+            var tile_layer_7c1d68619e638ec72abfa8f0328c61c0 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/a10c48d6aa273330d81dda10e2f950aa-25ee96907e29264c7be10e1454cdb99e/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -338,11 +338,11 @@
             );
         
     
-            tile_layer_9da5a5ed00d7012e65e0fd01533f31cd.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_7c1d68619e638ec72abfa8f0328c61c0.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_71d19338b9e2ff20355ce2e9733ff856 = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/7b0eadca781f6499aaf7fbc2b4901f3f-3639495bcd7a6b4eed3a3c1453cde91c/tiles/{z}/{x}/{y}",
+            var tile_layer_a3a4ebcdd3b9d134318454ccc6ad2f8a = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/beaf85103cfb0c31124a987c7ba8ebbf-1f7ffac213bcc13677b6810fe67f58d0/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -358,11 +358,11 @@
             );
         
     
-            tile_layer_71d19338b9e2ff20355ce2e9733ff856.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_a3a4ebcdd3b9d134318454ccc6ad2f8a.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_8c7d6903b7a92c3f68ebd4ace24f338e = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/aa8438565ceae29d28d78fa006e1db78-f3769e41f9ff6f66c14dd38dbda3c3c7/tiles/{z}/{x}/{y}",
+            var tile_layer_3e2c1d7f5f4802f1269d34cdc0f415c7 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/29d8798612f7b8bab7ef1963c3d8f02f-0da9c4999886ef5a2cd393ce3309d6ce/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -378,11 +378,11 @@
             );
         
     
-            tile_layer_8c7d6903b7a92c3f68ebd4ace24f338e.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_3e2c1d7f5f4802f1269d34cdc0f415c7.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_dbb45e2e7d15ade4a3dd8b3050e387df = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/ec8648d6970a16c23e3857dd77823bb2-b102cb2e1fceda1c174e66ed495c5914/tiles/{z}/{x}/{y}",
+            var tile_layer_ad7d1af728f30ed95af208b057cdbd2f = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/8c91dd33d8debfde7c0fbb8374c7fa06-6ef8eddfc2fe07e2cce4306ed12e1abf/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -398,461 +398,461 @@
             );
         
     
-            tile_layer_dbb45e2e7d15ade4a3dd8b3050e387df.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_ad7d1af728f30ed95af208b057cdbd2f.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var feature_group_e0090bdf902bc8fd497daf4bc8fb9688 = L.featureGroup(
+            var feature_group_b89da46f4ab40dcc585aeee568a82c13 = L.featureGroup(
                 {
 }
             );
         
     
-        function geo_json_fc004750adfa6247b8c730ea4a490f99_styler(feature) {
+        function geo_json_4391987805c969a3f87d8ffc29581cd6_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "#E6EE0F", "weight": 5};
             }
         }
 
-        function geo_json_fc004750adfa6247b8c730ea4a490f99_onEachFeature(feature, layer) {
+        function geo_json_4391987805c969a3f87d8ffc29581cd6_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_fc004750adfa6247b8c730ea4a490f99 = L.geoJson(null, {
-                onEachFeature: geo_json_fc004750adfa6247b8c730ea4a490f99_onEachFeature,
+        var geo_json_4391987805c969a3f87d8ffc29581cd6 = L.geoJson(null, {
+                onEachFeature: geo_json_4391987805c969a3f87d8ffc29581cd6_onEachFeature,
             
-                style: geo_json_fc004750adfa6247b8c730ea4a490f99_styler,
+                style: geo_json_4391987805c969a3f87d8ffc29581cd6_styler,
             ...{
 }
         });
 
-        function geo_json_fc004750adfa6247b8c730ea4a490f99_add (data) {
-            geo_json_fc004750adfa6247b8c730ea4a490f99
+        function geo_json_4391987805c969a3f87d8ffc29581cd6_add (data) {
+            geo_json_4391987805c969a3f87d8ffc29581cd6
                 .addData(data);
         }
-            geo_json_fc004750adfa6247b8c730ea4a490f99_add({"bbox": [105.74237684366524, 9.20212277514548, 105.74299099569487, 9.203384140818622], "features": [{"bbox": [105.74237684366524, 9.20212277514548, 105.74299099569487, 9.203384140818622], "geometry": {"coordinates": [[105.74237684366524, 9.203384140818622], [105.74299099569487, 9.20212277514548]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_4391987805c969a3f87d8ffc29581cd6_add({"bbox": [105.74237684366524, 9.20212277514548, 105.74299099569487, 9.203384140818622], "features": [{"bbox": [105.74237684366524, 9.20212277514548, 105.74299099569487, 9.203384140818622], "geometry": {"coordinates": [[105.74237684366524, 9.203384140818622], [105.74299099569487, 9.20212277514548]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-        var popup_46dd5a346e66843dfb5239ae9a18ceb7 = L.popup({
+        var popup_5e60c4f05539afe36ee00efcdb6bf5c3 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_c5a49a7f80eec99d77e259e22151e2c4 = $(`<div id="html_c5a49a7f80eec99d77e259e22151e2c4" style="width: 100.0%; height: 100.0%;"><b>Perforated dome breakwater</b><br>Built in 2019<br><img src="pictures/perforated_dome.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
-                popup_46dd5a346e66843dfb5239ae9a18ceb7.setContent(html_c5a49a7f80eec99d77e259e22151e2c4);
+                var html_9240d31b3ed0e270af95027e53bd951f = $(`<div id="html_9240d31b3ed0e270af95027e53bd951f" style="width: 100.0%; height: 100.0%;"><b>Perforated dome breakwater</b><br>Built in 2019<br><img src="pictures/perforated_dome.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
+                popup_5e60c4f05539afe36ee00efcdb6bf5c3.setContent(html_9240d31b3ed0e270af95027e53bd951f);
             
         
 
-        geo_json_fc004750adfa6247b8c730ea4a490f99.bindPopup(popup_46dd5a346e66843dfb5239ae9a18ceb7)
+        geo_json_4391987805c969a3f87d8ffc29581cd6.bindPopup(popup_5e60c4f05539afe36ee00efcdb6bf5c3)
         ;
 
         
     
     
-            geo_json_fc004750adfa6247b8c730ea4a490f99.addTo(feature_group_e0090bdf902bc8fd497daf4bc8fb9688);
+            geo_json_4391987805c969a3f87d8ffc29581cd6.addTo(feature_group_b89da46f4ab40dcc585aeee568a82c13);
         
     
-        function geo_json_67a598ee9ab3e55eca470c5cadedd250_styler(feature) {
+        function geo_json_68d80a294226c0e2e9c18c50cdf1a367_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "#E6EE0F", "weight": 5};
             }
         }
 
-        function geo_json_67a598ee9ab3e55eca470c5cadedd250_onEachFeature(feature, layer) {
+        function geo_json_68d80a294226c0e2e9c18c50cdf1a367_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_67a598ee9ab3e55eca470c5cadedd250 = L.geoJson(null, {
-                onEachFeature: geo_json_67a598ee9ab3e55eca470c5cadedd250_onEachFeature,
+        var geo_json_68d80a294226c0e2e9c18c50cdf1a367 = L.geoJson(null, {
+                onEachFeature: geo_json_68d80a294226c0e2e9c18c50cdf1a367_onEachFeature,
             
-                style: geo_json_67a598ee9ab3e55eca470c5cadedd250_styler,
+                style: geo_json_68d80a294226c0e2e9c18c50cdf1a367_styler,
             ...{
 }
         });
 
-        function geo_json_67a598ee9ab3e55eca470c5cadedd250_add (data) {
-            geo_json_67a598ee9ab3e55eca470c5cadedd250
+        function geo_json_68d80a294226c0e2e9c18c50cdf1a367_add (data) {
+            geo_json_68d80a294226c0e2e9c18c50cdf1a367
                 .addData(data);
         }
-            geo_json_67a598ee9ab3e55eca470c5cadedd250_add({"bbox": [105.74300990617559, 9.201595751182893, 105.74500264203527, 9.202098812655601], "features": [{"bbox": [105.74300990617559, 9.201595751182893, 105.74500264203527, 9.202098812655601], "geometry": {"coordinates": [[105.74300990617559, 9.202098812655601], [105.7439687958984, 9.201595751182893], [105.74500264203527, 9.20179655426243]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_68d80a294226c0e2e9c18c50cdf1a367_add({"bbox": [105.74300990617559, 9.201595751182893, 105.74500264203527, 9.202098812655601], "features": [{"bbox": [105.74300990617559, 9.201595751182893, 105.74500264203527, 9.202098812655601], "geometry": {"coordinates": [[105.74300990617559, 9.202098812655601], [105.7439687958984, 9.201595751182893], [105.74500264203527, 9.20179655426243]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-        var popup_47aa8d704287fe1d441a830fe27cd544 = L.popup({
+        var popup_26b1ac6a5c5e0fe2d6c55f7efe6a0d90 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_e1800248ceeb6177d1bbba7e069f235c = $(`<div id="html_e1800248ceeb6177d1bbba7e069f235c" style="width: 100.0%; height: 100.0%;"><b>Detached riprap pillar breakwater</b><br>Built in 2019<br><img src="pictures/detached_riprap_pillar.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
-                popup_47aa8d704287fe1d441a830fe27cd544.setContent(html_e1800248ceeb6177d1bbba7e069f235c);
+                var html_458dbf788796532c761e853bdb31a51e = $(`<div id="html_458dbf788796532c761e853bdb31a51e" style="width: 100.0%; height: 100.0%;"><b>Detached riprap pillar breakwater</b><br>Built in 2019<br><img src="pictures/detached_riprap_pillar.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
+                popup_26b1ac6a5c5e0fe2d6c55f7efe6a0d90.setContent(html_458dbf788796532c761e853bdb31a51e);
             
         
 
-        geo_json_67a598ee9ab3e55eca470c5cadedd250.bindPopup(popup_47aa8d704287fe1d441a830fe27cd544)
+        geo_json_68d80a294226c0e2e9c18c50cdf1a367.bindPopup(popup_26b1ac6a5c5e0fe2d6c55f7efe6a0d90)
         ;
 
         
     
     
-            geo_json_67a598ee9ab3e55eca470c5cadedd250.addTo(feature_group_e0090bdf902bc8fd497daf4bc8fb9688);
+            geo_json_68d80a294226c0e2e9c18c50cdf1a367.addTo(feature_group_b89da46f4ab40dcc585aeee568a82c13);
         
     
-        function geo_json_4ec54f9d656887e506a5b31eae521c37_styler(feature) {
+        function geo_json_6cc2ac8f00e5070454ed481e7a05bb0c_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "#E6EE0F", "weight": 5};
             }
         }
 
-        function geo_json_4ec54f9d656887e506a5b31eae521c37_onEachFeature(feature, layer) {
+        function geo_json_6cc2ac8f00e5070454ed481e7a05bb0c_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_4ec54f9d656887e506a5b31eae521c37 = L.geoJson(null, {
-                onEachFeature: geo_json_4ec54f9d656887e506a5b31eae521c37_onEachFeature,
+        var geo_json_6cc2ac8f00e5070454ed481e7a05bb0c = L.geoJson(null, {
+                onEachFeature: geo_json_6cc2ac8f00e5070454ed481e7a05bb0c_onEachFeature,
             
-                style: geo_json_4ec54f9d656887e506a5b31eae521c37_styler,
+                style: geo_json_6cc2ac8f00e5070454ed481e7a05bb0c_styler,
             ...{
 }
         });
 
-        function geo_json_4ec54f9d656887e506a5b31eae521c37_add (data) {
-            geo_json_4ec54f9d656887e506a5b31eae521c37
+        function geo_json_6cc2ac8f00e5070454ed481e7a05bb0c_add (data) {
+            geo_json_6cc2ac8f00e5070454ed481e7a05bb0c
                 .addData(data);
         }
-            geo_json_4ec54f9d656887e506a5b31eae521c37_add({"bbox": [105.74521990096547, 9.201858775026986, 105.74642421281315, 9.202123544115425], "features": [{"bbox": [105.74521990096547, 9.201858775026986, 105.74642421281315, 9.202123544115425], "geometry": {"coordinates": [[105.74521990096547, 9.201858775026986], [105.74642421281315, 9.202123544115425]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_6cc2ac8f00e5070454ed481e7a05bb0c_add({"bbox": [105.74521990096547, 9.201858775026986, 105.74642421281315, 9.202123544115425], "features": [{"bbox": [105.74521990096547, 9.201858775026986, 105.74642421281315, 9.202123544115425], "geometry": {"coordinates": [[105.74521990096547, 9.201858775026986], [105.74642421281315, 9.202123544115425]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-        var popup_3dd60cbcf65f8090e6e14f484ae7cf72 = L.popup({
+        var popup_fd8e920aba89812d1152c8b0f40672b9 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_585a57f8c4edb627a4acaf410fa3c8cd = $(`<div id="html_585a57f8c4edb627a4acaf410fa3c8cd" style="width: 100.0%; height: 100.0%;"><b>Detached riprap pillar breakwater</b><br>Built in 2019<br><img src="pictures/detached_riprap_pillar.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
-                popup_3dd60cbcf65f8090e6e14f484ae7cf72.setContent(html_585a57f8c4edb627a4acaf410fa3c8cd);
+                var html_7278e769760157cdfd6ecd18a5e0b9dc = $(`<div id="html_7278e769760157cdfd6ecd18a5e0b9dc" style="width: 100.0%; height: 100.0%;"><b>Detached riprap pillar breakwater</b><br>Built in 2019<br><img src="pictures/detached_riprap_pillar.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
+                popup_fd8e920aba89812d1152c8b0f40672b9.setContent(html_7278e769760157cdfd6ecd18a5e0b9dc);
             
         
 
-        geo_json_4ec54f9d656887e506a5b31eae521c37.bindPopup(popup_3dd60cbcf65f8090e6e14f484ae7cf72)
+        geo_json_6cc2ac8f00e5070454ed481e7a05bb0c.bindPopup(popup_fd8e920aba89812d1152c8b0f40672b9)
         ;
 
         
     
     
-            geo_json_4ec54f9d656887e506a5b31eae521c37.addTo(feature_group_e0090bdf902bc8fd497daf4bc8fb9688);
+            geo_json_6cc2ac8f00e5070454ed481e7a05bb0c.addTo(feature_group_b89da46f4ab40dcc585aeee568a82c13);
         
     
-        function geo_json_324fbece1012054c4eac1439bf897c70_styler(feature) {
+        function geo_json_ac9aba8d9c4c2bc687f550fc1ab992b7_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "#E6EE0F", "weight": 5};
             }
         }
 
-        function geo_json_324fbece1012054c4eac1439bf897c70_onEachFeature(feature, layer) {
+        function geo_json_ac9aba8d9c4c2bc687f550fc1ab992b7_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_324fbece1012054c4eac1439bf897c70 = L.geoJson(null, {
-                onEachFeature: geo_json_324fbece1012054c4eac1439bf897c70_onEachFeature,
+        var geo_json_ac9aba8d9c4c2bc687f550fc1ab992b7 = L.geoJson(null, {
+                onEachFeature: geo_json_ac9aba8d9c4c2bc687f550fc1ab992b7_onEachFeature,
             
-                style: geo_json_324fbece1012054c4eac1439bf897c70_styler,
+                style: geo_json_ac9aba8d9c4c2bc687f550fc1ab992b7_styler,
             ...{
 }
         });
 
-        function geo_json_324fbece1012054c4eac1439bf897c70_add (data) {
-            geo_json_324fbece1012054c4eac1439bf897c70
+        function geo_json_ac9aba8d9c4c2bc687f550fc1ab992b7_add (data) {
+            geo_json_ac9aba8d9c4c2bc687f550fc1ab992b7
                 .addData(data);
         }
-            geo_json_324fbece1012054c4eac1439bf897c70_add({"bbox": [105.74665128876416, 9.202174583187597, 105.74968342801884, 9.203037897961524], "features": [{"bbox": [105.74665128876416, 9.202174583187597, 105.74968342801884, 9.203037897961524], "geometry": {"coordinates": [[105.74665128876416, 9.202174583187597], [105.74844672490117, 9.202572307405603], [105.74968342801884, 9.203037897961524]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_ac9aba8d9c4c2bc687f550fc1ab992b7_add({"bbox": [105.74665128876416, 9.202174583187597, 105.74968342801884, 9.203037897961524], "features": [{"bbox": [105.74665128876416, 9.202174583187597, 105.74968342801884, 9.203037897961524], "geometry": {"coordinates": [[105.74665128876416, 9.202174583187597], [105.74844672490117, 9.202572307405603], [105.74968342801884, 9.203037897961524]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-        var popup_00c462825449cfb8a21529d94b5baa52 = L.popup({
+        var popup_b5d50f2d49170d8fdca1505d2a3636c0 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_7cc2efcf0f27d2cfba80406a794056c2 = $(`<div id="html_7cc2efcf0f27d2cfba80406a794056c2" style="width: 100.0%; height: 100.0%;"><b>Detached riprap pillar breakwater</b><br>Built in 2019<br><img src="pictures/detached_riprap_pillar.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
-                popup_00c462825449cfb8a21529d94b5baa52.setContent(html_7cc2efcf0f27d2cfba80406a794056c2);
+                var html_4f81382394a1ffd72fe4387be5aaeded = $(`<div id="html_4f81382394a1ffd72fe4387be5aaeded" style="width: 100.0%; height: 100.0%;"><b>Detached riprap pillar breakwater</b><br>Built in 2019<br><img src="pictures/detached_riprap_pillar.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
+                popup_b5d50f2d49170d8fdca1505d2a3636c0.setContent(html_4f81382394a1ffd72fe4387be5aaeded);
             
         
 
-        geo_json_324fbece1012054c4eac1439bf897c70.bindPopup(popup_00c462825449cfb8a21529d94b5baa52)
+        geo_json_ac9aba8d9c4c2bc687f550fc1ab992b7.bindPopup(popup_b5d50f2d49170d8fdca1505d2a3636c0)
         ;
 
         
     
     
-            geo_json_324fbece1012054c4eac1439bf897c70.addTo(feature_group_e0090bdf902bc8fd497daf4bc8fb9688);
+            geo_json_ac9aba8d9c4c2bc687f550fc1ab992b7.addTo(feature_group_b89da46f4ab40dcc585aeee568a82c13);
         
     
-        function geo_json_5a888d9c31e5336b76804df982fbd2e1_styler(feature) {
+        function geo_json_9d953c4ee49be847c72fefee637508da_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "#E6EE0F", "weight": 5};
             }
         }
 
-        function geo_json_5a888d9c31e5336b76804df982fbd2e1_onEachFeature(feature, layer) {
+        function geo_json_9d953c4ee49be847c72fefee637508da_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_5a888d9c31e5336b76804df982fbd2e1 = L.geoJson(null, {
-                onEachFeature: geo_json_5a888d9c31e5336b76804df982fbd2e1_onEachFeature,
+        var geo_json_9d953c4ee49be847c72fefee637508da = L.geoJson(null, {
+                onEachFeature: geo_json_9d953c4ee49be847c72fefee637508da_onEachFeature,
             
-                style: geo_json_5a888d9c31e5336b76804df982fbd2e1_styler,
+                style: geo_json_9d953c4ee49be847c72fefee637508da_styler,
             ...{
 }
         });
 
-        function geo_json_5a888d9c31e5336b76804df982fbd2e1_add (data) {
-            geo_json_5a888d9c31e5336b76804df982fbd2e1
+        function geo_json_9d953c4ee49be847c72fefee637508da_add (data) {
+            geo_json_9d953c4ee49be847c72fefee637508da
                 .addData(data);
         }
-            geo_json_5a888d9c31e5336b76804df982fbd2e1_add({"bbox": [105.7499365988151, 9.203127064586669, 105.75634114999184, 9.205529789268045], "features": [{"bbox": [105.7499365988151, 9.203127064586669, 105.75634114999184, 9.205529789268045], "geometry": {"coordinates": [[105.7499365988151, 9.203127064586669], [105.75634114999184, 9.205529789268045]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_9d953c4ee49be847c72fefee637508da_add({"bbox": [105.7499365988151, 9.203127064586669, 105.75634114999184, 9.205529789268045], "features": [{"bbox": [105.7499365988151, 9.203127064586669, 105.75634114999184, 9.205529789268045], "geometry": {"coordinates": [[105.7499365988151, 9.203127064586669], [105.75634114999184, 9.205529789268045]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-        var popup_896a87f56354880990c0d4800ae189b4 = L.popup({
+        var popup_8a3d8112ff36a30255b495b1110305f9 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_744175aec1fb314ed75d8f9b7e1253d1 = $(`<div id="html_744175aec1fb314ed75d8f9b7e1253d1" style="width: 100.0%; height: 100.0%;"><b>Detached riprap pillar breakwater</b><br>Built in 2019<br><img src="pictures/detached_riprap_pillar.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
-                popup_896a87f56354880990c0d4800ae189b4.setContent(html_744175aec1fb314ed75d8f9b7e1253d1);
+                var html_28708af6bfea944ef698713aeb243cd1 = $(`<div id="html_28708af6bfea944ef698713aeb243cd1" style="width: 100.0%; height: 100.0%;"><b>Detached riprap pillar breakwater</b><br>Built in 2019<br><img src="pictures/detached_riprap_pillar.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
+                popup_8a3d8112ff36a30255b495b1110305f9.setContent(html_28708af6bfea944ef698713aeb243cd1);
             
         
 
-        geo_json_5a888d9c31e5336b76804df982fbd2e1.bindPopup(popup_896a87f56354880990c0d4800ae189b4)
+        geo_json_9d953c4ee49be847c72fefee637508da.bindPopup(popup_8a3d8112ff36a30255b495b1110305f9)
         ;
 
         
     
     
-            geo_json_5a888d9c31e5336b76804df982fbd2e1.addTo(feature_group_e0090bdf902bc8fd497daf4bc8fb9688);
+            geo_json_9d953c4ee49be847c72fefee637508da.addTo(feature_group_b89da46f4ab40dcc585aeee568a82c13);
         
     
-        function geo_json_5acb1d83d81ecb421a20b0c5b5bb0f3c_styler(feature) {
+        function geo_json_fda676ca1684bd63f7beddbd1306a815_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "#E6EE0F", "weight": 5};
             }
         }
 
-        function geo_json_5acb1d83d81ecb421a20b0c5b5bb0f3c_onEachFeature(feature, layer) {
+        function geo_json_fda676ca1684bd63f7beddbd1306a815_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_5acb1d83d81ecb421a20b0c5b5bb0f3c = L.geoJson(null, {
-                onEachFeature: geo_json_5acb1d83d81ecb421a20b0c5b5bb0f3c_onEachFeature,
+        var geo_json_fda676ca1684bd63f7beddbd1306a815 = L.geoJson(null, {
+                onEachFeature: geo_json_fda676ca1684bd63f7beddbd1306a815_onEachFeature,
             
-                style: geo_json_5acb1d83d81ecb421a20b0c5b5bb0f3c_styler,
+                style: geo_json_fda676ca1684bd63f7beddbd1306a815_styler,
             ...{
 }
         });
 
-        function geo_json_5acb1d83d81ecb421a20b0c5b5bb0f3c_add (data) {
-            geo_json_5acb1d83d81ecb421a20b0c5b5bb0f3c
+        function geo_json_fda676ca1684bd63f7beddbd1306a815_add (data) {
+            geo_json_fda676ca1684bd63f7beddbd1306a815
                 .addData(data);
         }
-            geo_json_5acb1d83d81ecb421a20b0c5b5bb0f3c_add({"bbox": [105.75652930402846, 9.205620212251846, 105.75761962199302, 9.20620402161817], "features": [{"bbox": [105.75652930402846, 9.205620212251846, 105.75761962199302, 9.20620402161817], "geometry": {"coordinates": [[105.75652930402846, 9.205620212251846], [105.75761962199302, 9.20620402161817]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_fda676ca1684bd63f7beddbd1306a815_add({"bbox": [105.75652930402846, 9.205620212251846, 105.75761962199302, 9.20620402161817], "features": [{"bbox": [105.75652930402846, 9.205620212251846, 105.75761962199302, 9.20620402161817], "geometry": {"coordinates": [[105.75652930402846, 9.205620212251846], [105.75761962199302, 9.20620402161817]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-        var popup_e6b1ba053a1314b38dc3f404eacc6955 = L.popup({
+        var popup_045de252a9227055dc43e722e9c78875 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_37f70e06eed9f7c892134707d1148f94 = $(`<div id="html_37f70e06eed9f7c892134707d1148f94" style="width: 100.0%; height: 100.0%;"><b>Detached riprap pillar breakwater</b><br>Built in 2019<br><img src="pictures/detached_riprap_pillar.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
-                popup_e6b1ba053a1314b38dc3f404eacc6955.setContent(html_37f70e06eed9f7c892134707d1148f94);
+                var html_7bca3987f62ad067ec6ba163b6d7efd4 = $(`<div id="html_7bca3987f62ad067ec6ba163b6d7efd4" style="width: 100.0%; height: 100.0%;"><b>Detached riprap pillar breakwater</b><br>Built in 2019<br><img src="pictures/detached_riprap_pillar.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
+                popup_045de252a9227055dc43e722e9c78875.setContent(html_7bca3987f62ad067ec6ba163b6d7efd4);
             
         
 
-        geo_json_5acb1d83d81ecb421a20b0c5b5bb0f3c.bindPopup(popup_e6b1ba053a1314b38dc3f404eacc6955)
+        geo_json_fda676ca1684bd63f7beddbd1306a815.bindPopup(popup_045de252a9227055dc43e722e9c78875)
         ;
 
         
     
     
-            geo_json_5acb1d83d81ecb421a20b0c5b5bb0f3c.addTo(feature_group_e0090bdf902bc8fd497daf4bc8fb9688);
+            geo_json_fda676ca1684bd63f7beddbd1306a815.addTo(feature_group_b89da46f4ab40dcc585aeee568a82c13);
         
     
-        function geo_json_259050b8569178444591df3c5f4da35d_styler(feature) {
+        function geo_json_ac8ee42cdc4cfd492cfd2d5c1b8fa962_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "#E6EE0F", "weight": 5};
             }
         }
 
-        function geo_json_259050b8569178444591df3c5f4da35d_onEachFeature(feature, layer) {
+        function geo_json_ac8ee42cdc4cfd492cfd2d5c1b8fa962_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_259050b8569178444591df3c5f4da35d = L.geoJson(null, {
-                onEachFeature: geo_json_259050b8569178444591df3c5f4da35d_onEachFeature,
+        var geo_json_ac8ee42cdc4cfd492cfd2d5c1b8fa962 = L.geoJson(null, {
+                onEachFeature: geo_json_ac8ee42cdc4cfd492cfd2d5c1b8fa962_onEachFeature,
             
-                style: geo_json_259050b8569178444591df3c5f4da35d_styler,
+                style: geo_json_ac8ee42cdc4cfd492cfd2d5c1b8fa962_styler,
             ...{
 }
         });
 
-        function geo_json_259050b8569178444591df3c5f4da35d_add (data) {
-            geo_json_259050b8569178444591df3c5f4da35d
+        function geo_json_ac8ee42cdc4cfd492cfd2d5c1b8fa962_add (data) {
+            geo_json_ac8ee42cdc4cfd492cfd2d5c1b8fa962
                 .addData(data);
         }
-            geo_json_259050b8569178444591df3c5f4da35d_add({"bbox": [105.74097665305041, 9.202396613018816, 105.74139910096736, 9.203623980140481], "features": [{"bbox": [105.74097665305041, 9.202396613018816, 105.74139910096736, 9.203623980140481], "geometry": {"coordinates": [[[105.74097665305041, 9.202507815890046], [105.74100072241133, 9.202582396189873], [105.74110264635041, 9.20259033924633], [105.74115763163607, 9.202603577682739], [105.74121127581786, 9.202659179086913], [105.74117104268376, 9.2029821966173], [105.74115120888841, 9.203240066526652], [105.74110561132984, 9.203602798710497], [105.74118071318254, 9.203623980140481], [105.74127459049842, 9.203610741748987], [105.7413014125938, 9.203417461148737], [105.74131750584924, 9.203242714212138], [105.7413531669448, 9.20298435792794], [105.74139910096736, 9.202697125460633], [105.74139507765574, 9.202605780297917], [105.74136691445648, 9.202513111270001], [105.74128510708444, 9.202452214458923], [105.74121536964722, 9.20241117530246], [105.74111344570812, 9.202396613018816], [105.74103566164769, 9.202399260704302], [105.74099542851359, 9.202440299869748], [105.74097665305041, 9.202507815890046]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_ac8ee42cdc4cfd492cfd2d5c1b8fa962_add({"bbox": [105.74097665305041, 9.202396613018816, 105.74139910096736, 9.203623980140481], "features": [{"bbox": [105.74097665305041, 9.202396613018816, 105.74139910096736, 9.203623980140481], "geometry": {"coordinates": [[[105.74097665305041, 9.202507815890046], [105.74100072241133, 9.202582396189873], [105.74110264635041, 9.20259033924633], [105.74115763163607, 9.202603577682739], [105.74121127581786, 9.202659179086913], [105.74117104268376, 9.2029821966173], [105.74115120888841, 9.203240066526652], [105.74110561132984, 9.203602798710497], [105.74118071318254, 9.203623980140481], [105.74127459049842, 9.203610741748987], [105.7413014125938, 9.203417461148737], [105.74131750584924, 9.203242714212138], [105.7413531669448, 9.20298435792794], [105.74139910096736, 9.202697125460633], [105.74139507765574, 9.202605780297917], [105.74136691445648, 9.202513111270001], [105.74128510708444, 9.202452214458923], [105.74121536964722, 9.20241117530246], [105.74111344570812, 9.202396613018816], [105.74103566164769, 9.202399260704302], [105.74099542851359, 9.202440299869748], [105.74097665305041, 9.202507815890046]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-        var popup_fdbeea03f6ecaba4f1d418933f9428e2 = L.popup({
+        var popup_8ce449204ea722636078f7f086175feb = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_ac20bd13d4e5f270d74587600a3c9117 = $(`<div id="html_ac20bd13d4e5f270d74587600a3c9117" style="width: 100.0%; height: 100.0%;"><b>Detached riprap pillar breakwater</b><br>Built in 2019<br><img src="pictures/detached_riprap_pillar.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
-                popup_fdbeea03f6ecaba4f1d418933f9428e2.setContent(html_ac20bd13d4e5f270d74587600a3c9117);
+                var html_dc1fda85838be77985c7b06ece717a26 = $(`<div id="html_dc1fda85838be77985c7b06ece717a26" style="width: 100.0%; height: 100.0%;"><b>Detached riprap pillar breakwater</b><br>Built in 2019<br><img src="pictures/detached_riprap_pillar.JPG" width="200px"><br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
+                popup_8ce449204ea722636078f7f086175feb.setContent(html_dc1fda85838be77985c7b06ece717a26);
             
         
 
-        geo_json_259050b8569178444591df3c5f4da35d.bindPopup(popup_fdbeea03f6ecaba4f1d418933f9428e2)
+        geo_json_ac8ee42cdc4cfd492cfd2d5c1b8fa962.bindPopup(popup_8ce449204ea722636078f7f086175feb)
         ;
 
         
     
     
-            geo_json_259050b8569178444591df3c5f4da35d.addTo(feature_group_e0090bdf902bc8fd497daf4bc8fb9688);
+            geo_json_ac8ee42cdc4cfd492cfd2d5c1b8fa962.addTo(feature_group_b89da46f4ab40dcc585aeee568a82c13);
         
     
-            feature_group_e0090bdf902bc8fd497daf4bc8fb9688.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            feature_group_b89da46f4ab40dcc585aeee568a82c13.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var feature_group_619d4434fdf30a357d7d8fe3332ebf9a = L.featureGroup(
+            var feature_group_3eb97eb2912e751d4be67c917faa3a35 = L.featureGroup(
                 {
 }
             );
         
     
-        function geo_json_4e32cca6aa847c98ace5d748e01beab1_styler(feature) {
+        function geo_json_2e5c460d6ea085275542b566aa475301_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "#F18D09", "weight": 5};
             }
         }
 
-        function geo_json_4e32cca6aa847c98ace5d748e01beab1_onEachFeature(feature, layer) {
+        function geo_json_2e5c460d6ea085275542b566aa475301_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_4e32cca6aa847c98ace5d748e01beab1 = L.geoJson(null, {
-                onEachFeature: geo_json_4e32cca6aa847c98ace5d748e01beab1_onEachFeature,
+        var geo_json_2e5c460d6ea085275542b566aa475301 = L.geoJson(null, {
+                onEachFeature: geo_json_2e5c460d6ea085275542b566aa475301_onEachFeature,
             
-                style: geo_json_4e32cca6aa847c98ace5d748e01beab1_styler,
+                style: geo_json_2e5c460d6ea085275542b566aa475301_styler,
             ...{
 }
         });
 
-        function geo_json_4e32cca6aa847c98ace5d748e01beab1_add (data) {
-            geo_json_4e32cca6aa847c98ace5d748e01beab1
+        function geo_json_2e5c460d6ea085275542b566aa475301_add (data) {
+            geo_json_2e5c460d6ea085275542b566aa475301
                 .addData(data);
         }
-            geo_json_4e32cca6aa847c98ace5d748e01beab1_add({"bbox": [105.74198659809032, 9.209194399987977, 105.75927269368567, 9.216019853097889], "features": [{"bbox": [105.74198659809032, 9.209194399987977, 105.75927269368567, 9.216019853097889], "geometry": {"coordinates": [[105.74198659809032, 9.209194399987977], [105.74350688675682, 9.209798060694427], [105.74359808186334, 9.210216386368556], [105.74412379483026, 9.210459968178514], [105.7443330071334, 9.210549987500558], [105.74464414337913, 9.210671778311545], [105.74560770139732, 9.2108600948581], [105.7465250168804, 9.211003066549923], [105.74809136877049, 9.21116917603126], [105.74949280256158, 9.211444192635279], [105.75010434621697, 9.211682478362238], [105.75199695363725, 9.212605455986004], [105.75485956686747, 9.213960025351016], [105.75927269368567, 9.216019853097889]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_2e5c460d6ea085275542b566aa475301_add({"bbox": [105.74198659809032, 9.209194399987977, 105.75927269368567, 9.216019853097889], "features": [{"bbox": [105.74198659809032, 9.209194399987977, 105.75927269368567, 9.216019853097889], "geometry": {"coordinates": [[105.74198659809032, 9.209194399987977], [105.74350688675682, 9.209798060694427], [105.74359808186334, 9.210216386368556], [105.74412379483026, 9.210459968178514], [105.7443330071334, 9.210549987500558], [105.74464414337913, 9.210671778311545], [105.74560770139732, 9.2108600948581], [105.7465250168804, 9.211003066549923], [105.74809136877049, 9.21116917603126], [105.74949280256158, 9.211444192635279], [105.75010434621697, 9.211682478362238], [105.75199695363725, 9.212605455986004], [105.75485956686747, 9.213960025351016], [105.75927269368567, 9.216019853097889]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-        var popup_48e27d26470bc6d53f74067ebeb530af = L.popup({
+        var popup_898974f5892508a915e04f9da672ead9 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_ebb8333e9bd3844d701e0f7fa5f55bdc = $(`<div id="html_ebb8333e9bd3844d701e0f7fa5f55bdc" style="width: 100.0%; height: 100.0%;"><b>Seadike</b><br>Built in 1990<br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
-                popup_48e27d26470bc6d53f74067ebeb530af.setContent(html_ebb8333e9bd3844d701e0f7fa5f55bdc);
+                var html_2bbcce69556f3412b864ed32b802b2fd = $(`<div id="html_2bbcce69556f3412b864ed32b802b2fd" style="width: 100.0%; height: 100.0%;"><b>Seadike</b><br>Built in 1990<br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
+                popup_898974f5892508a915e04f9da672ead9.setContent(html_2bbcce69556f3412b864ed32b802b2fd);
             
         
 
-        geo_json_4e32cca6aa847c98ace5d748e01beab1.bindPopup(popup_48e27d26470bc6d53f74067ebeb530af)
+        geo_json_2e5c460d6ea085275542b566aa475301.bindPopup(popup_898974f5892508a915e04f9da672ead9)
         ;
 
         
     
     
-            geo_json_4e32cca6aa847c98ace5d748e01beab1.addTo(feature_group_619d4434fdf30a357d7d8fe3332ebf9a);
+            geo_json_2e5c460d6ea085275542b566aa475301.addTo(feature_group_3eb97eb2912e751d4be67c917faa3a35);
         
     
-        function geo_json_6bbf0d7519ff0fe651e1de9dc9a8a30a_styler(feature) {
+        function geo_json_e58b4047bad09dc595791382bdf83a6b_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "#F18D09", "weight": 5};
             }
         }
 
-        function geo_json_6bbf0d7519ff0fe651e1de9dc9a8a30a_onEachFeature(feature, layer) {
+        function geo_json_e58b4047bad09dc595791382bdf83a6b_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_6bbf0d7519ff0fe651e1de9dc9a8a30a = L.geoJson(null, {
-                onEachFeature: geo_json_6bbf0d7519ff0fe651e1de9dc9a8a30a_onEachFeature,
+        var geo_json_e58b4047bad09dc595791382bdf83a6b = L.geoJson(null, {
+                onEachFeature: geo_json_e58b4047bad09dc595791382bdf83a6b_onEachFeature,
             
-                style: geo_json_6bbf0d7519ff0fe651e1de9dc9a8a30a_styler,
+                style: geo_json_e58b4047bad09dc595791382bdf83a6b_styler,
             ...{
 }
         });
 
-        function geo_json_6bbf0d7519ff0fe651e1de9dc9a8a30a_add (data) {
-            geo_json_6bbf0d7519ff0fe651e1de9dc9a8a30a
+        function geo_json_e58b4047bad09dc595791382bdf83a6b_add (data) {
+            geo_json_e58b4047bad09dc595791382bdf83a6b
                 .addData(data);
         }
-            geo_json_6bbf0d7519ff0fe651e1de9dc9a8a30a_add({"bbox": [105.73089543495507, 9.204458285148057, 105.73949363371865, 9.20819203524506], "features": [{"bbox": [105.73089543495507, 9.204458285148057, 105.73949363371865, 9.20819203524506], "geometry": {"coordinates": [[105.73089543495507, 9.204458285148057], [105.73949363371865, 9.20819203524506]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_e58b4047bad09dc595791382bdf83a6b_add({"bbox": [105.73089543495507, 9.204458285148057, 105.73949363371865, 9.20819203524506], "features": [{"bbox": [105.73089543495507, 9.204458285148057, 105.73949363371865, 9.20819203524506], "geometry": {"coordinates": [[105.73089543495507, 9.204458285148057], [105.73949363371865, 9.20819203524506]], "type": "LineString"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-        var popup_c646b342ae4ac1341c37947a446213f9 = L.popup({
+        var popup_95f194ed480a6a31cadfc0c452e1b695 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_faa849de0277089efaec62576bd47e4b = $(`<div id="html_faa849de0277089efaec62576bd47e4b" style="width: 100.0%; height: 100.0%;"><b>Seadike</b><br>Built in 1990<br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
-                popup_c646b342ae4ac1341c37947a446213f9.setContent(html_faa849de0277089efaec62576bd47e4b);
+                var html_33709c669075fcf9fa6bf052188e9bde = $(`<div id="html_33709c669075fcf9fa6bf052188e9bde" style="width: 100.0%; height: 100.0%;"><b>Seadike</b><br>Built in 1990<br>More information: <a href="https://publish.obsidian.md/livinglab/Mangrove+Living+Lab/1.+Introduction/1.1+Why+Mekong+Delta" target="_blank">Website link</a></div>`)[0];
+                popup_95f194ed480a6a31cadfc0c452e1b695.setContent(html_33709c669075fcf9fa6bf052188e9bde);
             
         
 
-        geo_json_6bbf0d7519ff0fe651e1de9dc9a8a30a.bindPopup(popup_c646b342ae4ac1341c37947a446213f9)
+        geo_json_e58b4047bad09dc595791382bdf83a6b.bindPopup(popup_95f194ed480a6a31cadfc0c452e1b695)
         ;
 
         
     
     
-            geo_json_6bbf0d7519ff0fe651e1de9dc9a8a30a.addTo(feature_group_619d4434fdf30a357d7d8fe3332ebf9a);
+            geo_json_e58b4047bad09dc595791382bdf83a6b.addTo(feature_group_3eb97eb2912e751d4be67c917faa3a35);
         
     
-            feature_group_619d4434fdf30a357d7d8fe3332ebf9a.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            feature_group_3eb97eb2912e751d4be67c917faa3a35.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_e142e572fe85159c7792bd17548bd1ed = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/c50eeae722788111c6cab842c889b45f-f35719603f69e88875289f3d19f9e692/tiles/{z}/{x}/{y}",
+            var tile_layer_aee0e14f27c70201ec68d390d56a9436 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/c50eeae722788111c6cab842c889b45f-9e86e11729b092ebaa0650474f98096d/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -868,11 +868,11 @@
             );
         
     
-            tile_layer_e142e572fe85159c7792bd17548bd1ed.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_aee0e14f27c70201ec68d390d56a9436.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_87ba6c55ddee902526753527e83f0810 = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/4a5ecbf996a3468322778c8aa5c970ba-821aa8df4e78d2b0b10893b2b1999738/tiles/{z}/{x}/{y}",
+            var tile_layer_d849052c1138e88ce6614d2dd81af30d = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/4a5ecbf996a3468322778c8aa5c970ba-a2433c76c7bf30bb2ea5a56cd7550802/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -888,11 +888,11 @@
             );
         
     
-            tile_layer_87ba6c55ddee902526753527e83f0810.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_d849052c1138e88ce6614d2dd81af30d.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_beff5bd0c022c9153fd676fd216d2ba6 = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/af52a99f7c07afade9df9d7c03266889-2141f8ed6f80b580766046bcfca01a8b/tiles/{z}/{x}/{y}",
+            var tile_layer_4d577290be92b746eaf71dd579357b87 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/af52a99f7c07afade9df9d7c03266889-06e41ee971bf5fa626a7f5db7d9c53ba/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -908,11 +908,11 @@
             );
         
     
-            tile_layer_beff5bd0c022c9153fd676fd216d2ba6.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_4d577290be92b746eaf71dd579357b87.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_564a74b0c4efa1013d02352e5eb75eb8 = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/041d3306a2307347ef6bd375e41b08a5-df3e6abb25303ccc91a162bfaa3b74d3/tiles/{z}/{x}/{y}",
+            var tile_layer_fe3969f7157c82fe136f2c086d82a542 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/041d3306a2307347ef6bd375e41b08a5-d77cf112f694ab083df513aba8e234db/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -928,11 +928,11 @@
             );
         
     
-            tile_layer_564a74b0c4efa1013d02352e5eb75eb8.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_fe3969f7157c82fe136f2c086d82a542.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_16e2d110ba3b6c4bc710850fc7d986ae = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/a10c48d6aa273330d81dda10e2f950aa-04c6c55a618cdb4e488f83079f279e5d/tiles/{z}/{x}/{y}",
+            var tile_layer_67ee3221013e528e94cb91cfa1803d1b = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/a10c48d6aa273330d81dda10e2f950aa-2765f10af08bf3210f7382e15187c4df/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -948,11 +948,11 @@
             );
         
     
-            tile_layer_16e2d110ba3b6c4bc710850fc7d986ae.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_67ee3221013e528e94cb91cfa1803d1b.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_3997e4bfbf42ac81e178595c92b4b004 = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/7b0eadca781f6499aaf7fbc2b4901f3f-6d6a0fd56799b06ff742535d97dd2547/tiles/{z}/{x}/{y}",
+            var tile_layer_d41ea3b3e7d6b86a790dc6e4f4ebdc67 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/beaf85103cfb0c31124a987c7ba8ebbf-0a91d423e4fbeedb52dcbd671cacb664/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -968,11 +968,11 @@
             );
         
     
-            tile_layer_3997e4bfbf42ac81e178595c92b4b004.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_d41ea3b3e7d6b86a790dc6e4f4ebdc67.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_8fbf077b2dd07577874c07b0bcb5512c = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/aa8438565ceae29d28d78fa006e1db78-ac4b1b7583cfe268a5be9df8393d04e8/tiles/{z}/{x}/{y}",
+            var tile_layer_e5287573ff69fe93f7f3ea80f4574a55 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/29d8798612f7b8bab7ef1963c3d8f02f-2e7b91eaa5dc970989a477c941cbde35/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -988,11 +988,11 @@
             );
         
     
-            tile_layer_8fbf077b2dd07577874c07b0bcb5512c.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_e5287573ff69fe93f7f3ea80f4574a55.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var tile_layer_aabfc06bb9b986de873f34db4f543b3c = L.tileLayer(
-                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/ec8648d6970a16c23e3857dd77823bb2-add48162822419d1b92b5b9b687df794/tiles/{z}/{x}/{y}",
+            var tile_layer_58b2ae9a0c478529b30c57a52bf02645 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1/projects/earthengine-legacy/maps/8c91dd33d8debfde7c0fbb8374c7fa06-fd75e69710824cdf6d0cd8260da1d595/tiles/{z}/{x}/{y}",
                 {
   "minZoom": 0,
   "maxZoom": 24,
@@ -1008,7 +1008,7 @@
             );
         
     
-            tile_layer_aabfc06bb9b986de873f34db4f543b3c.addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            tile_layer_58b2ae9a0c478529b30c57a52bf02645.addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
         L.control.scale({
@@ -1016,36 +1016,36 @@
             metric: true,
             imperial: false,
             maxWidth: 300
-        }).addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+        }).addTo(map_078f21bad3403027b534cd25c29ba342);
         
     
-            var layer_control_2e9e9303ea0f90afe973717b83744299_layers = {
+            var layer_control_56cfa5493946882b1fbaf72d65048bc7_layers = {
                 base_layers : {
                 },
                 overlays :  {
-                    "OpenStreetMap" : tile_layer_188f3965931f7a1ccf4d757c402674d4,
-                    "Sentinel-2 (2024)" : tile_layer_5c0c8a0d95d1509ebc27680509ee56bd,
-                    "Mangrove loss (1984-1992)" : tile_layer_e142e572fe85159c7792bd17548bd1ed,
-                    "Mangrove loss (1992-1997)" : tile_layer_87ba6c55ddee902526753527e83f0810,
-                    "Mangrove loss (1997-2001)" : tile_layer_beff5bd0c022c9153fd676fd216d2ba6,
-                    "Mangrove loss (2001-2005)" : tile_layer_564a74b0c4efa1013d02352e5eb75eb8,
-                    "Mangrove loss (2005-2010)" : tile_layer_16e2d110ba3b6c4bc710850fc7d986ae,
-                    "Mangrove loss (2010-2015)" : tile_layer_3997e4bfbf42ac81e178595c92b4b004,
-                    "Mangrove loss (2015-2020)" : tile_layer_8fbf077b2dd07577874c07b0bcb5512c,
-                    "Mangrove loss (2020-2025)" : tile_layer_aabfc06bb9b986de873f34db4f543b3c,
-                    "Breakwaters" : feature_group_e0090bdf902bc8fd497daf4bc8fb9688,
-                    "Seadikes" : feature_group_619d4434fdf30a357d7d8fe3332ebf9a,
+                    "OpenStreetMap" : tile_layer_ae2a798f058338b64185e5077d30eded,
+                    "Sentinel-2 (2024)" : tile_layer_94418812b7dfdd464fd155f342d26e6f,
+                    "Mangrove loss (1984-1992)" : tile_layer_aee0e14f27c70201ec68d390d56a9436,
+                    "Mangrove loss (1992-1997)" : tile_layer_d849052c1138e88ce6614d2dd81af30d,
+                    "Mangrove loss (1997-2001)" : tile_layer_4d577290be92b746eaf71dd579357b87,
+                    "Mangrove loss (2001-2005)" : tile_layer_fe3969f7157c82fe136f2c086d82a542,
+                    "Mangrove loss (2005-2010)" : tile_layer_67ee3221013e528e94cb91cfa1803d1b,
+                    "Mangrove loss (2010-2015)" : tile_layer_d41ea3b3e7d6b86a790dc6e4f4ebdc67,
+                    "Mangrove loss (2015-2020)" : tile_layer_e5287573ff69fe93f7f3ea80f4574a55,
+                    "Mangrove loss (2020-2025)" : tile_layer_58b2ae9a0c478529b30c57a52bf02645,
+                    "Breakwaters" : feature_group_b89da46f4ab40dcc585aeee568a82c13,
+                    "Seadikes" : feature_group_3eb97eb2912e751d4be67c917faa3a35,
                 },
             };
-            let layer_control_2e9e9303ea0f90afe973717b83744299 = L.control.layers(
-                layer_control_2e9e9303ea0f90afe973717b83744299_layers.base_layers,
-                layer_control_2e9e9303ea0f90afe973717b83744299_layers.overlays,
+            let layer_control_56cfa5493946882b1fbaf72d65048bc7 = L.control.layers(
+                layer_control_56cfa5493946882b1fbaf72d65048bc7_layers.base_layers,
+                layer_control_56cfa5493946882b1fbaf72d65048bc7_layers.overlays,
                 {
   "position": "topright",
   "collapsed": true,
   "autoZIndex": true,
 }
-            ).addTo(map_0fa2eea97a80ff6f6b6efc690c0948a6);
+            ).addTo(map_078f21bad3403027b534cd25c29ba342);
 
         
 </script>
